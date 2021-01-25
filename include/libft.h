@@ -6,7 +6,7 @@
 /*   By: yait-el- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/25 09:12:07 by yait-el-          #+#    #+#             */
-/*   Updated: 2021/01/25 09:12:09 by yait-el-         ###   ########.fr       */
+/*   Updated: 2021/01/25 16:41:49 by yait-el-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,4 +117,5 @@ size_t			ft_strlcpy(char *dest, const char *src, size_t size);
 size_t			ft_list_size(t_list *lst);
 int				ft_strncasecmp(char *str1, char *str2, int n);
 int				ft_atoi_base(char *str, char *base);
+int             ft_whitespace(char c);
 #endif

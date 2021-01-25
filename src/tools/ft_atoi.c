@@ -4,34 +4,43 @@
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yait-el- <marvin@42.fr>                    +#+  +:+       +#+        */
-/*   By: yait-el- <marvin@42.fr>                    +#+  +:+       +#+        */
-/*   By: yait-el- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/25 10:08:20 by yait-el-          #+#    #+#             */
-/*   Updated: 2021/01/25 10:08:21 by yait-el-         ###   ########.fr       */
+/*   Created: 2019/04/02 05:31:06 by yait-el-          #+#    #+#             */
+/*   Updated: 2021/01/25 16:47:18 by yait-el-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+int             ft_whitespac(char c)
 {
-	int	reste;
-	int	i;
+    if (c == ' ' || c == '\0' || c == '\n' || c == '\v' ||
+            c == '\f' || c == '\r' || c == '\t')
+        return (1);
+    return (0);
+}
 
+int		ft_atoi(const char *str)
+{
+	size_t		i;
+	int			sign;
+	int			nb;
+
+	nb = 0;
+	sign = 1;
 	i = 0;
-	reste = 0;
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'
-			|| str[i] == '\r' || str[i] == '\v' || str[i] == '\f')
-		str++;
-	if (*str == '-' || *str == '+')
-		i = 1;
-	while (str[i] != '\0' && str[i] >= '0' && str[i] <= '9')
+	while (ft_whitespac(str[i]))
+		i++;
+	if (str[i] == '-' || str[i] == '+')
 	{
-		reste = (reste * 10) + (str[i] - '0');
+		if (str[i] == '-')
+			sign = -1;
 		i++;
 	}
-	if (*str == '-')
-		return (-reste);
-	return (reste);
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		nb = nb * 10 + (str[i] - '0');
+		i++;
+	}
+	return (nb * sign);
 }

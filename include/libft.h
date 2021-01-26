@@ -6,7 +6,7 @@
 /*   By: yait-el- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/25 09:12:07 by yait-el-          #+#    #+#             */
-/*   Updated: 2021/01/26 15:25:10 by yait-el-         ###   ########.fr       */
+/*   Updated: 2021/01/26 15:37:12 by yait-el-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,22 +19,6 @@
 # include <sys/types.h>
 # include <sys/stat.h>
 # include <fcntl.h>
-
-int				get_next_line(const int fd, char **line);
-
-typedef struct	s_list
-{
-	void			*content;
-	size_t			content_size;
-	struct s_list	*next;
-}				t_list;
-
-typedef struct	s_gnl
-{
-	int				fd;
-	char			*content;
-	struct s_gnl	*next;
-}				t_gnl;
 
 void			ft_bzero(void	*s, size_t	n);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);

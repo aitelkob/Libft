@@ -6,7 +6,7 @@
 /*   By: yait-el- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/25 09:12:07 by yait-el-          #+#    #+#             */
-/*   Updated: 2021/01/25 16:41:49 by yait-el-         ###   ########.fr       */
+/*   Updated: 2021/01/26 15:25:10 by yait-el-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 # include <sys/types.h>
 # include <sys/stat.h>
 # include <fcntl.h>
-# define BUFF_SIZE 20
 
 int				get_next_line(const int fd, char **line);
 

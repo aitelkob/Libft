@@ -6,7 +6,7 @@
 #    By: yait-el- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/25 10:58:08 by yait-el-          #+#    #+#              #
-#    Updated: 2021/01/25 15:45:58 by yait-el-         ###   ########.fr        #
+#    Updated: 2021/01/26 15:22:29 by yait-el-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -123,8 +123,10 @@ SRC         += tools/ft_tolower.c
 SRC         += tools/ft_toupper.c
 SRC         += tools/get_next_line.c
 SRC         += tools/upper_case.c
+SRC         += tools/get_next_line.c
 
 INCS        := include/libft.h
+INCS        += include/get_next_line.h
 
 ########## for D-bug
 print-%  : ; @echo $* = $($*)

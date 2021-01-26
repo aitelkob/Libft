@@ -6,11 +6,11 @@
 /*   By: yait-el- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/09 09:52:16 by yait-el-          #+#    #+#             */
-/*   Updated: 2019/08/06 10:56:43 by yait-el-         ###   ########.fr       */
+/*   Updated: 2021/01/26 16:03:36 by yait-el-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "libft.h"
 
 static char		*ft_line_new(char *s, char **line)
 {

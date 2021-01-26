@@ -6,7 +6,7 @@
 /*   By: yait-el- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/25 09:12:07 by yait-el-          #+#    #+#             */
-/*   Updated: 2021/01/26 15:37:12 by yait-el-         ###   ########.fr       */
+/*   Updated: 2021/01/26 16:03:04 by yait-el-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,19 @@
 # include <sys/types.h>
 # include <sys/stat.h>
 # include <fcntl.h>
+# include <sys/uio.h>
 
+# define BUFF_SIZE 32
+# define FD_SIZE 4863
+
+typedef struct	s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}				t_list;
+
+int				get_next_line(const int fd, char **line);
 void			ft_bzero(void	*s, size_t	n);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
 void			ft_memdel(void **ap);

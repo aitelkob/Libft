@@ -6,7 +6,7 @@
 #    By: yait-el- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/25 10:58:08 by yait-el-          #+#    #+#              #
-#    Updated: 2021/01/26 16:01:41 by yait-el-         ###   ########.fr        #
+#    Updated: 2021/01/30 12:15:36 by yait-el-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,6 +76,7 @@ SRC         += memory/ft_memcpynull.c
 SRC         += memory/ft_memdel.c
 SRC         += memory/ft_memmove.c
 SRC         += memory/ft_memset.c
+SRC         += memory/free_splited.c
 
 SRC			+=list/ft_lstadd.c
 SRC         +=list/ft_lstdel.c

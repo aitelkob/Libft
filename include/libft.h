@@ -6,7 +6,7 @@
 /*   By: yait-el- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/25 09:12:07 by yait-el-          #+#    #+#             */
-/*   Updated: 2021/01/26 16:03:04 by yait-el-         ###   ########.fr       */
+/*   Updated: 2021/01/30 12:16:24 by yait-el-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ int				ft_memcmp(const void *s1, const void *s2, size_t n);
 void			ft_memdel(void **ap);
 void			*ft_memcpy(void	*dst, const void	*src, size_t	n);
 void			*ft_memset(void *b, int c, size_t len);
+void			free_splited(char   **str);
 void			*ft_memccpy(void	*dst, const void	*src, int c, size_t	n);
 void			*ft_memmove(void	*dst, const	void	*src, size_t	len);
 void			*ft_memchr(const	void *s, int c, size_t n);

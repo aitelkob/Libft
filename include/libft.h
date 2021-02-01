@@ -6,7 +6,7 @@
 /*   By: yait-el- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/25 09:12:07 by yait-el-          #+#    #+#             */
-/*   Updated: 2021/01/30 12:29:39 by yait-el-         ###   ########.fr       */
+/*   Updated: 2021/02/01 09:03:07 by yait-el-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,15 @@ typedef struct	s_list
 	struct s_list	*next;
 }				t_list;
 
+typedef struct	s_gnl
+{
+	int				fd;
+	char			*content;
+	struct s_gnl	*next;
+}				t_gnl;
+
+
+double          ft_atof(const char *str);
 int				get_next_line(const int fd, char **line);
 int				ft_lentab(char **tab);
 void			ft_bzero(void	*s, size_t	n);

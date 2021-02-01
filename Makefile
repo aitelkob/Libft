@@ -6,7 +6,7 @@
 #    By: yait-el- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/25 10:58:08 by yait-el-          #+#    #+#              #
-#    Updated: 2021/01/30 12:15:36 by yait-el-         ###   ########.fr        #
+#    Updated: 2021/02/01 08:49:25 by yait-el-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -113,6 +113,8 @@ SRC         += put/ft_putstr.c
 SRC         += put/ft_putstr_fd.c
 
 SRC			+= tools/ft_atoi.c
+SRC			+= tools/ft_atod.c
+SRC			+= tools/ft_lentab.c
 SRC         += tools/ft_atoi_base.c
 SRC         += tools/ft_bzero.c
 SRC         += tools/ft_charinword.c

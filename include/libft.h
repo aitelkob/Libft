@@ -6,7 +6,7 @@
 /*   By: yait-el- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/25 09:12:07 by yait-el-          #+#    #+#             */
-/*   Updated: 2021/02/01 09:03:07 by yait-el-         ###   ########.fr       */
+/*   Updated: 2021/03/05 18:27:45 by yait-el-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,17 @@
 # include <fcntl.h>
 # include <sys/uio.h>
 
-# define BUFF_SIZE 32
-# define FD_SIZE 4863
+
+# define FD_MAX		4096
+# define BUFF_SIZE  1
+
+typedef struct		s_rst
+{
+	int				fd;
+	char			*rst;
+	struct s_rst	*next;
+
+}					t_rst;
 
 typedef struct	s_list
 {

@@ -6,7 +6,7 @@
 #    By: yait-el- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/25 10:58:08 by yait-el-          #+#    #+#              #
-#    Updated: 2021/03/09 19:29:50 by yait-el-         ###   ########.fr        #
+#    Updated: 2021/03/27 13:57:32 by yait-el-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,6 +45,7 @@ SRC			+= string/ft_strequ.c
 SRC			+= string/ft_strchr.c
 SRC         += string/ft_strclr.c
 SRC         += string/ft_strcmp.c
+SRC         += string/ft_strncmp.c
 SRC         += string/ft_strcpy.c
 SRC         += string/ft_strdel.c
 SRC         += string/ft_strdup.c
